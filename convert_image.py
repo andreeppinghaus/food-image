@@ -1,10 +1,38 @@
-#
-# @reference: 
-#  - https://learnopencv.com/image-resizing-with-opencv/
-#  - https://docs.python.org/3/library/os.html
-# 
-# let's start with the Imports 
+"""
+convert_image
+Get all files en raw, resize to 608x608 and write 
+with new name in converted
+ ...
 
+Attributes
+----------
+
+down_width : int
+        value to resize width, yolo default 608
+down_height : int
+        value to resize height, yolo default 608
+path_raw : string
+        directory name for source image, default ./raw
+path_converted : string
+        diretory name with images resized, default '../converted/'
+
+Whot to use:
+------------
+
+python convert_image.py
+
+Author:
+------
+André Eppinghaus
+
+References: 
+----------
+ - https://learnopencv.com/image-resizing-with-opencv/
+ - https://docs.python.org/3/library/os.html
+ - https://docs.opencv.org/4.x/
+ - https://realpython.com/documenting-python-code/
+
+"""
 import os
 import cv2
 import numpy as np
