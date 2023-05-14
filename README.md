@@ -17,7 +17,7 @@ Foi criado um arquivo chamado convert_image.py que lista todos os arquivos do di
 converte a imagem para 608x608 e grava no diretório converted com número+jpeg, normalizando os arquivos.
 
 ## Anotando as imagens ##
-Utilizando o container do software label-studio.
+Utilizando o container do software label-studio, aponte o diretório dos dados para annotations-data
 
 ### Exemplo de uso: ###
 Arquivo: /home/andre/label-studio.sh
@@ -25,4 +25,10 @@ Arquivo: /home/andre/label-studio.sh
 sudo docker run -it -p 8080:8080 -v `pwd`/Download/PUC/food-image/annotations-data:/label-studio/data heartexlabs/label-studio:latest
 
 Autor
+
 - __[André Eppinghaus](https://github.com/andreeppinghaus)__ 
+
+Referencias
+    - https://labelstud.io/
+    - https://www.nepa.unicamp.br/taco/tabela.php?ativo=tabela
+
