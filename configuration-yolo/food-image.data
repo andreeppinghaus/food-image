@@ -1,8 +1,6 @@
 classes= 608
 train  = data/train.txt
 valid  = data/test.txt
-#valid = data/coco_val_5k.list
 names = data/food-image.names
 backup = /yolo/backup/
-eval=coco
 
