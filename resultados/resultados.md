@@ -72,7 +72,7 @@ MAP ou AP, métrica usada para medir a acurácia do yolo.
 a função de perda está diminindo no treinamento 9.
 
 
-Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:12<00:00, 12.06s/it]
+Class                         Images  Instances  Box(P          R      mAP50     mAP50-95)
                    all         11         68      0.476      0.103      0.149     0.0544
   Alface, crespa, crua         11          9      0.167      0.333      0.239     0.0563
      Arroz, piamontese         11          1          0          0          0          0
@@ -105,3 +105,42 @@ De um modo geral, a perda de DFL 'considera' o problema de desequilíbrio de cla
 
 
 metricas: https://learnopencv.com/train-yolov8-on-custom-dataset/
+
+
+Class                         Images  Instances   Box(P          R      mAP50     mAP50-95)
+                   all         11         68      0.422     0.0981      0.169     0.0866
+  Alface, crespa, crua         11          9      0.163      0.155     0.0872     0.0344
+     Arroz, piamontese         11          1          0          0          0          0
+ Arroz, tipo 1, cozido         11          6      0.322      0.167      0.181      0.135
+Batata, inglesa, cozida         11          5       0.27        0.2      0.229      0.109
+ Batata, inglesa, purê         11          1          1          0          0          0
+     Beterraba, cozida         11          2          1          0          0          0
+      Brócolis, cozido         11          1          0          0     0.0255     0.0051
+Carne, bovina, capa de contra-filé, com gordura, grelhada         11          1          1          0      0.995      0.597
+Carne, bovina, contra-filé, com gordura, grelhado         11          1          0          0     0.0829     0.0332
+Carne, bovina, fraldinha, com gordura, cozida         11          1          0          0          0          0
+          Cebola, crua         11          2          1          0          0          0
+Cebola, fritura, carne         11          1          0          0      0.199     0.0199
+       Cenoura, cozida         11          7      0.219      0.429      0.305      0.163
+         Cenoura, crua         11          5      0.542       0.25      0.541      0.218
+        Chuchu, cozido         11          1          1          0          0          0
+ Feijão, preto, cozido         11          8      0.768      0.375      0.409      0.168
+Frango, peito, com pele, assado         11          3          0          0     0.0416     0.0123
+        Inhame, cozido         11          4      0.255       0.25      0.262      0.157
+          Jiló, cozido         11          3      0.755      0.333      0.361      0.252
+Ovo, de galinha, inteiro, cozido/10minutos         11          2          0          0          0          0
+ Porco, pernil, assado         11          2          0          0          0          0
+Tomate, com semente, cru         11          2          1          0          0          0
+Speed: 3.5ms preprocess, 1495.7ms inference, 0.0ms loss, 7.7ms postprocess per image
+Results saved to runs/detect/val7
+
+
+image 1/7 /content/dataset/test/1.jpeg: 640x480 2 Arroz, tipo 1, cozidos, 1 Feijão, preto, cozido, 992.8ms
+image 2/7 /content/dataset/test/2.jpeg: 640x480 (no detections), 1162.1ms
+image 3/7 /content/dataset/test/3.jpeg: 640x480 1 Brócolis, cozido, 1 Porco, pernil, assado, 1192.0ms
+image 4/7 /content/dataset/test/4.jpeg: 640x480 1 Feijão, preto, cozido, 1 Frango, coxa, sem pele, cozida, 963.6ms
+image 5/7 /content/dataset/test/5.jpeg: 640x480 1 Cenoura, cozida, 929.6ms
+image 6/7 /content/dataset/test/6.jpeg: 640x480 (no detections), 927.6ms
+image 7/7 /content/dataset/test/7.jpeg: 640x480 1 Carne, bovina, acém, moído, cozido, 935.4ms
+Speed: 2.4ms preprocess, 1014.7ms inference, 3.6ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/predict4
