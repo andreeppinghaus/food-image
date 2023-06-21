@@ -106,6 +106,7 @@ De um modo geral, a perda de DFL 'considera' o problema de desequilíbrio de cla
 
 metricas: https://learnopencv.com/train-yolov8-on-custom-dataset/
 
+treinamento 12
 
 Class                         Images  Instances   Box(P          R      mAP50     mAP50-95)
                    all         11         68      0.422     0.0981      0.169     0.0866
@@ -133,7 +134,6 @@ Ovo, de galinha, inteiro, cozido/10minutos         11          2          0     
 Tomate, com semente, cru         11          2          1          0          0          0
 Speed: 3.5ms preprocess, 1495.7ms inference, 0.0ms loss, 7.7ms postprocess per image
 Results saved to runs/detect/val7
-
 
 image 1/7 /content/dataset/test/1.jpeg: 640x480 2 Arroz, tipo 1, cozidos, 1 Feijão, preto, cozido, 992.8ms
 image 2/7 /content/dataset/test/2.jpeg: 640x480 (no detections), 1162.1ms
