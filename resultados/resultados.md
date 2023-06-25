@@ -47,7 +47,6 @@ no treinamento 9, o recall é de 0.103 => 100%
 
 nas iterações de 1 a 4, o metodo patience foi de 200, no treinamento 4, de 500 no 8/9 foi de 1500,  a partir do 9 vou colocar 1800
 
-https://stackoverflow.com/questions/54977311/what-is-loss-cls-and-loss-bbox-and-why-are-they-always-zero-in-training
 
 Ao treinar um detector multi-objeto, você geralmente tem (pelo menos) dois tipos de perdas:
 
@@ -144,3 +143,13 @@ image 6/7 /content/dataset/test/6.jpeg: 640x480 (no detections), 927.6ms
 image 7/7 /content/dataset/test/7.jpeg: 640x480 1 Carne, bovina, acém, moído, cozido, 935.4ms
 Speed: 2.4ms preprocess, 1014.7ms inference, 3.6ms postprocess per image at shape (1, 3, 640, 640)
 Results saved to runs/detect/predict4
+
+
+https://stackoverflow.com/questions/54977311/what-is-loss-cls-and-loss-bbox-and-why-are-they-always-zero-in-training
+
+Foram baixados datasets do kaggle, images.cv, https://fdc.nal.usda.gov/download-datasets.html
+
+depois usei o programa convert_images para transformar o tamanho 608x608.
+
+faltou baixar Cenoura, cozida 
+
