@@ -153,3 +153,20 @@ depois usei o programa convert_images para transformar o tamanho 608x608.
 
 faltou baixar Cenoura, cozida 
 
+## Procedimento para aumento das imagens:
+
+foi utilizado um webscrap do google imagens para as classes apresentadas acima. Inicialmente baixamos todas as imagens por classe indiscriminadamente, foram iutilizados os seguintes criterios de filtragem de imagens:
+
+* depis foram retidas as imagens sem qualidade;
+* com marcas d'agua de propriedade, de anúncios específicos e repetidas;
+* imagens que não eram possíveis de ser classificadas corretamente;
+* imagens repetidas.
+
+Foram convertidas para o tamanho 608x608 compatível com o algoritmo. 
+
+Para o processo de anotação, foi utilizado o software label-studio versão 7;
+
+Todas as imagens foram exportadas para um dataset específico e o processo de aprendizado foi reininciado.
+
+
+
